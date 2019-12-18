@@ -5,6 +5,7 @@ fn array_diff<T: PartialEq>(a: Vec<T>, b: Vec<T>) -> Vec<T> {
 #[cfg(test)]
 mod tests {
     use super::*;
+
     #[test]
     fn returns_expected() {
         assert_eq!(array_diff(vec![1,2], vec![1]), vec![2]);
